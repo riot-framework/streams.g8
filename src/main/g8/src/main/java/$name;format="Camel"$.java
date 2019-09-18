@@ -13,7 +13,7 @@ import akka.stream.javadsl.Source;
 public class Application {
 
 	public static void main(String[] args) throws InstantiationException, IllegalAccessException, InterruptedException {
-		ActorSystem system = ActorSystem.create("riot-streaming-demo");
+		ActorSystem system = ActorSystem.create("$name$");
 		Materializer mat = ActorMaterializer.create(system);
 
 		// Example: This timer source sends a String each second:

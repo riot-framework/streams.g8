@@ -1,4 +1,4 @@
-name := "riot-streaming-demo"
+name := "$name$"
 scalaVersion := "2.12.8"
 
 libraryDependencies ++= Seq(
