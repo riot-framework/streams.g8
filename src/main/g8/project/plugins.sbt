@@ -1,1 +1,1 @@
-addSbtPlugin("org.riot-framework" % "sbt-riotctl" % "0.2")
+addSbtPlugin("org.riot-framework" % "sbt-riotctl" % "0.3")
