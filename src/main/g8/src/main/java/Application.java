@@ -16,7 +16,7 @@ import riot.GPIO.State;
  */
 public class Application {
 
-    public static void main(String[] args) throws InstantiationException, IllegalAccessException, InterruptedException {
+    public static void main(String[] args) {
         ActorSystem system = ActorSystem.create("$name$");
         Materializer mat = ActorMaterializer.create(system);
 
