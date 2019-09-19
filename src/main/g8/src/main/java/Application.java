@@ -1,11 +1,15 @@
 import java.time.Duration;
 
+import akka.Done;
+import akka.NotUsed;
 import akka.actor.ActorSystem;
 import akka.stream.ActorMaterializer;
 import akka.stream.Materializer;
+import akka.stream.javadsl.Flow;
 import akka.stream.javadsl.Sink;
 import akka.stream.javadsl.Source;
-
+import riot.GPIO;
+import riot.GPIO.State;
 /**
  * A skeleton for a RIoT application: Create a timer that sends a "Tick" message
  * each second, then print it to the console.
