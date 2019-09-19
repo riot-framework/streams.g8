@@ -1,5 +1,17 @@
 $name$
 ----------------
+$if(generate_eclipse_project_files.truthy)$
+Note: To generate an Eclipse configuration file, run the following in this directory:
+```
+sbt eclipse
+```
+$endif$
+$if(generate_ensime_configuration_files.truthy)$
+Note: To generate an Ensime configuration file, run the following in this directory:
+```
+sbt ensimeConfig
+```
+$endif$
 
 The <code>Application</code> class in the default package is a Java main class that briefly sets up [Akka Streams][streams] for you. 
 You can then instantiate further RIoT Akka Streams components by using the RIoT builders, e.g.:
