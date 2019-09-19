@@ -1,3 +1,5 @@
+import riot.riotctl.sbt.RiotCtl._
+
 name := "$name$"
 scalaVersion := "2.12.8"
 
