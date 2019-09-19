@@ -24,7 +24,7 @@ public class Application {
 
         // Streams are built by a Materializer (mat), and go from a source (via a number
         // of flow steps) to a sink:
-		tickSource.to(stdOutSink).run(mat);
+        tickSource.to(stdOutSink).run(mat);
 
 	    // Use RIoT's Builders (e.g. riot.GPIO, riot.I2C) or Akka Streams components
 	    // from other projects (e.g. Alpakka) to create additional steps, and use them
