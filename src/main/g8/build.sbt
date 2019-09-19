@@ -4,7 +4,7 @@ name := "$name$"
 scalaVersion := "2.12.8"
 
 libraryDependencies ++= Seq(
-  "org.riot-framework" % "riot-core" % "0.2",
+  "org.riot-framework" % "riot-core" % "0.+",
   "ch.qos.logback" % "logback-classic" % "1.2.3"
 )
 
