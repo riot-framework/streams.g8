@@ -2,6 +2,9 @@ import riot.riotctl.sbt.RiotCtl._
 
 name := "$name$"
 scalaVersion := "2.12.8"
+$if(generate_ensime_configuration_files.truthy)$
+ensimeScalaVersion := "2.12.8"
+$endif$
 
 libraryDependencies ++= Seq(
   // RIoT minor releases are backwards-compatible:
