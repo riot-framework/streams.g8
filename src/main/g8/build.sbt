@@ -28,7 +28,7 @@ lazy val root = (project in file("."))
     riotDbgPort := 8000,
       
     // Packages and features needed by your code:
-    riotPrereqs := "oracle-java8-jdk wiringpi",
+    riotPrereqs := "openjdk-8-jdk wiringpi",
     riotRequiresI2C := false,
     riotRequiresSPI := false
   )

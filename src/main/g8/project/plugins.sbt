@@ -1,4 +1,4 @@
-addSbtPlugin("org.riot-framework" % "sbt-riotctl" % "0.3")
+addSbtPlugin("org.riot-framework" % "sbt-riotctl" % "0.4")
 $if(generate_eclipse_project_files.truthy)$
 addSbtPlugin("com.typesafe.sbteclipse" % "sbteclipse-plugin" % "5.2.4")
 $endif$
