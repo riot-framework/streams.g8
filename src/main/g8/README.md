@@ -2,25 +2,27 @@ $name$
 ----------------
 
 ### Project Set-Up
+**IntelliJ IDEA:** This is probably the easiest IDE to set up for SBT projects, as it has had [SBT support] for a while now. Lucky you :)
 
 $if(generate_eclipse_project_files.truthy)$
-**Eclipse users:** To generate an Eclipse configuration file, run the following in this directory:
+**Eclipse:** To generate an Eclipse configuration file, run the following in this project's root directory:
 ```
 sbt eclipse
 ```
 
 $endif$
 $if(generate_ensime_configuration_files.truthy)$
-**Ensime Users:** To generate an Ensime configuration file, run the following in this directory:
+**Ensime:** To generate an Ensime configuration file, run the following in this project's root directory:
 ```
 sbt ensimeConfig
 ```
 
 $endif$
-**Maven Users:** To generate a Maven POM file, run the following in this directory:
+**Maven:** To generate a Maven POM file, run the following in this project's root directory:
 ```
 sbt makePom
 ```
+
 
 ### Working with the RIoT Framework
 
@@ -76,3 +78,5 @@ Then run <code>sbt riotRun</code> to compile your code, copy it to the device, a
 
 Once you're happy with the result, just run <code>sbt riotInstall</code> to set up your code as a service, which will automatically start when the device boots.
 
+
+[SBT support]:https://blog.jetbrains.com/scala/2017/03/23/scala-plugin-for-intellij-idea-2017-1-cleaner-ui-sbt-shell-repl-worksheet-akka-support-and-more/
