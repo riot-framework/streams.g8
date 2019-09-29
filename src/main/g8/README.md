@@ -80,3 +80,6 @@ Once you're happy with the result, just run <code>sbt riotInstall</code> to set 
 
 
 [SBT support]:https://blog.jetbrains.com/scala/2017/03/23/scala-plugin-for-intellij-idea-2017-1-cleaner-ui-sbt-shell-repl-worksheet-akka-support-and-more/
+[streams]: https://doc.akka.io/docs/akka/current/stream/stream-quickstart.html
+[alpakka]: https://doc.akka.io/docs/alpakka/current/
+[mqtt]: https://doc.akka.io/docs/alpakka/current/mqtt.html
