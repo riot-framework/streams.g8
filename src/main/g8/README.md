@@ -1,17 +1,28 @@
 $name$
 ----------------
+
+### Project Set-Up
+
 $if(generate_eclipse_project_files.truthy)$
-Note: To generate an Eclipse configuration file, run the following in this directory:
+**Eclipse users:** To generate an Eclipse configuration file, run the following in this directory:
 ```
 sbt eclipse
 ```
+
 $endif$
 $if(generate_ensime_configuration_files.truthy)$
-Note: To generate an Ensime configuration file, run the following in this directory:
+**Ensime Users:** To generate an Ensime configuration file, run the following in this directory:
 ```
 sbt ensimeConfig
 ```
+
 $endif$
+**Maven Users:** To generate a Maven POM file, run the following in this directory:
+```
+sbt makePom
+```
+
+### Working with the RIoT Framework
 
 The <code>Application</code> class in the default package is a Java main class that briefly sets up [Akka Streams][streams] for you. 
 You can then instantiate further RIoT Akka Streams components by using the RIoT builders, e.g.:
@@ -51,6 +62,8 @@ The components can then be assembled into streams and run:
 ```
 tickSource.via(gpio7).to(logSink).run(mat);
 ```
+
+### Running your code on a Raspberry Pi
 
 RIoT comes with a tool (RIoT Control) which simplifies deployment to your Raspberry Pi. This tool is already preconfigured in this project. Set-up the name of your device and the user credentials to use for deployment in the build.sbt file:
 
