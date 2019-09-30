@@ -8,6 +8,7 @@
 .classpath
 .settings
 .project
+*.launch
 
 # VS.Code configuration
 .bloop

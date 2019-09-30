@@ -1,0 +1,12 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="Run on Raspberry Pi" type="SbtRunConfiguration" factoryName="sbt Task" show_console_on_std_err="false" show_console_on_std_out="false">
+    <option name="allowRunningInParallel" value="false" />
+    <option name="tasks" value="riotInstall" />
+    <option name="useSbtShell" value="false" />
+    <option name="vmparams" value="-Xms1024M -Xmx4096M -Xss2M -XX:MaxMetaspaceSize=1024M" />
+    <option name="workingDir" value="$PROJECT_DIR$" />
+    <method v="2">
+      <option name="Make" enabled="true" />
+    </method>
+  </configuration>
+</component>
