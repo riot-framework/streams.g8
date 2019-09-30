@@ -2,7 +2,8 @@ $name$
 ----------------
 
 ### Project Set-Up
-**IntelliJ IDEA:** This is probably the easiest IDE to set up for SBT projects, as it has had [SBT support] for a while now. Lucky you :)
+**IntelliJ IDEA:** This is probably the easiest IDE to set up for SBT projects, as it has had [SBT support] for a while now. Lucky you :)    
+After opening the project, open the 'Even Log' (lower-right corner of the screen) and click on the 'Import sbt project' link.
 $if(generate_eclipse_project_files.truthy)$
 Run configurations have been generated for you: To start your application, connect your raspberry pi
 to your development machine, then from the "Run" menu, select "Run..." and "Run on Raspberry Pi". 
