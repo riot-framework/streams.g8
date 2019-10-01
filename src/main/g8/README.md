@@ -4,10 +4,11 @@ $name$
 ### Project Set-Up
 **IntelliJ IDEA:** This is probably the easiest IDE to set up for SBT projects, as it has had [SBT support] for a while now. Lucky you :)    
 After opening the project, open the 'Even Log' (lower-right corner of the screen) and click on the 'Import sbt project' link.
-$if(generate_eclipse_project_files.truthy)$
+$if(generate_intellij_run_configurations.truthy)$
 Run configurations have been generated for you: To start your application, connect your raspberry pi
 to your development machine, then from the "Run" menu, select "Run..." and "Run on Raspberry Pi". 
 $endif$
+
 
 $if(generate_eclipse_project_files.truthy)$
 **Eclipse:** To generate an Eclipse configuration file, run the following in this project's root directory:
@@ -15,12 +16,14 @@ $if(generate_eclipse_project_files.truthy)$
 sbt eclipse
 ```
 
+
 $endif$
 $if(generate_ensime_configuration_files.truthy)$
 **Ensime:** To generate an Ensime configuration file, run the following in this project's root directory:
 ```
 sbt ensimeConfig
 ```
+
 
 $endif$
 **Maven:** To generate a Maven POM file, run the following in this project's root directory:
