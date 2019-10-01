@@ -16,7 +16,7 @@ libraryDependencies ++= Seq(
 lazy val root = (project in file("."))
   .enablePlugins(JavaServerAppPackaging)
   .settings(
-    mainClass in Compile := Some("$name;format=\"Camel\"$"),
+    mainClass in Compile := Some("Application"),
 
     // Skip javadoc for this project:
     publishArtifact in (Compile, packageDoc) := false,

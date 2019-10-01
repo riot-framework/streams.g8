@@ -14,7 +14,7 @@ import riot.GPIO.State;
  * A skeleton for a RIoT application: Create a timer that sends a "Tick" message
  * each second, then print it to the console.
  */
-public class $name;format="Camel"$ {
+public class Application {
 
     public static void main(String[] args) {
         ActorSystem system = ActorSystem.create("$name$");
